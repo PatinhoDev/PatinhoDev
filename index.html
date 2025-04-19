@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+        *{
+            margin: 0;
+            padding: 0px;
+        
+       
+        }
+        body{
+            background-color: #F6F6F6;
+        }
+
+        header{
+            font-family: "Major Mono Display", monospace;
+            font-weight: 500;
+            color: white;
+            padding: 15px;
+            background-color: #292929;
+            margin: auto;
+            text-align: center;
+            font-weight: 100px;
+            margin-bottom: 50px;
+        }
+
+        li{
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .patinho-dev-paleta_circle{
+            height: 20px;
+            width: 20px;
+            background-color: red;
+            border-radius: 100px;
+            margin-right: 10px;        
+            margin-left: 10px;   
+            border-radius: 6px;
+        }
+
+        #azul{background-color: #4B7BAE;}
+        #amarelo{background-color: #FFFF9B;}
+        #cinza{background-color: 	#E8E8E8;}
+        #black{background-color: #292929;}
+        
+        .card-exemplo{
+            border-radius: 15px;
+            height: 400px;
+            width: 400px;
+         
+      
+            background-image: url('./exemplo.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            
+     
+       
+        }
+
+        .bloco{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+     
+        }
+
+        .resumo{
+            font-family: "Allan", serif;
+    
+            text-align: center;
+            justify-content: space-around;
+            display: flex;
+            margin-bottom: 50px;
+            font-family: "Aboreto", system-ui;
+
+            h2{
+                font-weight: 550;
+                width: 50vw;
+            }
+        }
+
+        mark{
+            background-color: transparent;
+            color: #FAFA74
+        }
+
+        .mark2{
+            color: #4B7BAE;
+        }
+
+        @media screen and (max-width: 720px) {
+            *{
+                justify-content: center;
+                text-align: center;
+
+            }
+            .patinho-dev-paleta{
+                margin-top: 50px;
+            }
+
+            h2{
+                width: 80vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><mark>Patinho</mark> | <mark class="mark2">Dev</mark></h1>
+    </header>
+
+    <div class="bloco">
+        
+        <div class="card-exemplo">
+            
+        </div>
+        <div class="patinho-dev-paleta">
+            <h2>Paleta de Cores:</h2>
+            <br>
+            <ul>
+                <li>
+                    Bordas & Marcações <br>
+                    <div class="patinho-dev-paleta_circle" id="amarelo"></div>
+                    #FFFF9B   
+                    <div class="patinho-dev-paleta_circle" id="azul"></div>
+                    #4B7BAE
+                </li>
+
+                <li>
+                    Fundos
+                    <div class="patinho-dev-paleta_circle" id="cinza"></div>
+                    #F6F6F6
+                </li>
+                <li>
+                    Textos
+                    <div class="patinho-dev-paleta_circle" id="black"></div>
+                    #F6F6F6
+                </li>
+            </ul>
+            <br><br><br>
+            <h2>Fontes:</h2>
+            <br>
+            <ul>
+                <li>
+                    Títulos:  
+                    "Major Mono Display".
+                </li>
+                <li>
+                    Descrições:
+                    "Aboreto".
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="resumo">
+       
+    
+        <h2>Ideia para Design:<br><br>Imagens preto e branco com destaques e marcações de amarelo, exibindo sites desenvolvidos. <br> <br>A logo será uma fotografia editada do criador com a mesma pegada (Preto e Branco) dando destaque de amarelo somente para o pato presente na foto. </h2>
+    </div>
+
+    
+</body>
+</html>
